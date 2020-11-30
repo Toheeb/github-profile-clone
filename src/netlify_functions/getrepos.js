@@ -8,22 +8,22 @@ exports.handler = (event, context, callback) => {
   const accessToken = process.env.GITHUB_API_KEY;
   const query = `
   query {
-  user(login: "toheeb") {
-    login
-    name
-    repositories(first: 20) {
-      nodes {
-        name
-        description
-        languages(first: 10) {
-          nodes {
-            name
+    user(login: "toheeb") {
+      login
+      name
+      repositories(first: 20) {
+        nodes {
+          name
+          description
+          languages(first: 10) {
+            nodes {
+              name
+            }
           }
-        }
-      } 
+        } 
+      }
     }
-  }
-}`;
+  }`;
 
   const send = body => {
     callback(null, {
@@ -42,7 +42,7 @@ exports.handler = (event, context, callback) => {
         Authorization: `Bearer ${accessToken}`
       }
     })
-      .then(res => send(res.data.data.user.pinnedItems.nodes))
+      .then(res => send(res.data.data.user))
       .catch(err => send(err));
   };
 
