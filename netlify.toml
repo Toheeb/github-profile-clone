@@ -1,0 +1,4 @@
+[[redirect]]
+from = "/"
+to = "/toheeb"
+status = 301
