@@ -16,3 +16,9 @@ document.getElementById('search-form__input').addEventListener('focusout', event
 document.getElementById('faux-menu-nav-toggle').addEventListener('click', event => {
     document.getElementById('faux-menu-nav').classList.toggle('faux-menu-nav_active')
 })
+
+
+fetch("/.netlify/functions/getrepos")
+      .then(response => response.json())
+      .then(repos => console.log(repos))
+      .catch(e => console.log('Error'));
