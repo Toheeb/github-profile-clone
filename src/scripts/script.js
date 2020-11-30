@@ -20,7 +20,7 @@ document.getElementById('faux-menu-nav-toggle').addEventListener('click', event 
 
 fetch("/.netlify/functions/getrepos")
     .then(response => response.json())
-    .then(user => update(user.repositories.node))
+    .then(user => update(user.repositories.nodes))
     .catch(e => console.log('Error'));
 
 
