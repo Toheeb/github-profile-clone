@@ -19,6 +19,7 @@ document.getElementById('faux-menu-nav-toggle').addEventListener('click', event 
 
 
 fetch("/.netlify/functions/getrepos")
-      .then(response => response.json())
-      .then(repos => console.log(repos))
+    //   .then(response => response.json())
+      .then(response => console.log(response))
+    //   .then(repos => console.log(repos))
       .catch(e => console.log('Error'));
