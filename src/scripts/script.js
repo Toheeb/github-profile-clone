@@ -20,12 +20,15 @@ document.getElementById('faux-menu-nav-toggle').addEventListener('click', event 
 
 fetch("/.netlify/functions/getrepos")
     .then(response => response.json())
-    .then(user => update(user.repositories.nodes))
+    .then(user => {
+        console.log("User: ", user, user.repositories.nodes)
+        return update(user.repositories.nodes)
+    })
     .catch(e => console.log('Error'));
 
 
 function update(data) {
-
+    console.log('Update Called')
     const domArr = data.map(repo => `
         <li class="repo__item">
             <div>
