@@ -22,7 +22,7 @@ fetch("/.netlify/functions/getrepos")
     .then(response => response.json())
     .then(user => {
         console.log("User: ", user, user.repositories.nodes)
-        return update(user.repositories.nodes)
+        update(user.repositories.nodes)
     })
     .catch(e => console.log('Error'));
 
@@ -47,6 +47,8 @@ function update(data) {
             </button>
         </li>
     `)
+
+    console.log(domArr.join(''))
     
     document.getElementById('repositories').innerHTML = domArr.join('')
 }
