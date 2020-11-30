@@ -19,9 +19,6 @@ document.getElementById('faux-menu-nav-toggle').addEventListener('click', event 
 
 
 fetch("/.netlify/functions/getrepos")
-    .then(response => {
-        console.log("Response in String", response)
-        return response.json()
-    })
+    .then(response => response.json())
     .then(repos => console.log("Repo", repos))
     .catch(e => console.log('Error'));
