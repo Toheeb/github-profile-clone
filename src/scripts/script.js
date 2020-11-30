@@ -27,7 +27,10 @@ fetch("/.netlify/functions/getrepos")
 
 
 function update(data) {
-    const domArr = data.map(repo => `
+    const domArr = data.map(repo => {
+        const lang = repo.primaryLanguage ? repo.primaryLanguage.name : ''
+
+        return `
         <li class="repo__item">
             <div>
                 <h3 class="h3 repo__h3">
@@ -35,7 +38,7 @@ function update(data) {
                 </h3>
                 <p class="repo__item-desc mb-10">${repo.description}</p>
                 <div>
-                    <span class="tag repo__tag tag_lang-${repo.primaryLanguage.name.toLowerCase() || ''}">${repo.primaryLanguage.name || ''}</span>
+                    <span class="tag repo__tag tag_lang-${lang.toLowerCase()}">${lang}</span>
                     <span class="tag repo__tag">Updated on ${new Date(repo.pushedAt).toDateString().substring(4)}</span>
                 </div>
             </div>
@@ -44,7 +47,7 @@ function update(data) {
                 Star
             </button>
         </li>
-    `)
+    `})
 
     document.getElementById('repositories').innerHTML = domArr.join('')
 }
