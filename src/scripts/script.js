@@ -21,10 +21,9 @@ document.getElementById('faux-menu-nav-toggle').addEventListener('click', event 
 fetch("/.netlify/functions/getrepos")
     .then(response => response.json())
     .then(user => {
-        console.log("User: ", user, user.repositories.nodes)
         update(user.repositories.nodes)
     })
-    .catch(e => console.log('Error'));
+    .catch(e => console.log(e));
 
 
 function update(data) {
@@ -48,7 +47,7 @@ function update(data) {
         </li>
     `)
 
-    console.log(domArr.join(''))
+    console.log("Dom Output", domArr, domArr.join(''))
     
     document.getElementById('repositories').innerHTML = domArr.join('')
 }
