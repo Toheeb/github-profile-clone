@@ -14,11 +14,12 @@ exports.handler = (event, context, callback) => {
       repositories(first: 20) {
         nodes {
           name
+          url
           description
-          languages(first: 10) {
-            nodes {
-              name
-            }
+          pushedAt
+          stargazerCount
+          primaryLanguage {
+            name
           }
         } 
       }
