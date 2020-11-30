@@ -139,12 +139,14 @@ body {
     border-top: 1px solid rgba(27, 31, 35, 0.15);
     padding-top: 40px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
 
 .footer-nav__item {
     margin-right: 14px;
+    white-space: nowrap;
 }
 
 
@@ -420,6 +422,7 @@ body {
 
 .footer__logo {
     color: #d1d5da;
+    display: none;
 }
 
 .footer__logo:hover {
@@ -784,5 +787,10 @@ body {
     .user-repo {
         padding-right: 32px;
         padding-left: 16px;
+    }
+
+    .footer-nav {
+        display: inline-block;
+        margin-right: 16px;
     }
 }
