@@ -179,12 +179,36 @@ body {
     color: #586069;
 }
 
-.tag_lang-color::before {
-    content: '';
+
+
+
+.tag_lang-html {
+    background-color: #e34c26;
+}
+
+.tag_lang-css {
+    background-color: #563d7c;
+}
+
+.tag_lang-php {
+    background-color: #4F5D95;
+}
+
+.tag_lang-javascript {
+    background-color: #f1e05a;
+}
+
+.tag_lang-typescript {
+    background-color: #f1e05a;
+}
+
+.tag_lang-php,
+.tag_lang-css,
+.tag_lang-html,
+.tag_lang-typescript,
+.tag_lang-javascript  {
     width: 12px;
     height: 12px;
-    background-color: attr(data-language-color);
-    background: #e34c26;
     border-radius: 50%;
     position: relative;
     top: 1px;
@@ -523,6 +547,10 @@ body {
 .repo-search__actions {
     display: flex;
     justify-content: space-between;
+}
+
+.repo__results {
+    min-height: 540px;
 }
 
 .repo__item {

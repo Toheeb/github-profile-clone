@@ -29,6 +29,7 @@ fetch("/.netlify/functions/getrepos")
 function update(data) {
     const domArr = data.map(repo => {
         const lang = repo.primaryLanguage ? repo.primaryLanguage.name : ''
+        const desc = repo.description ? repo.description : ''
 
         return `
         <li class="repo__item">
@@ -36,9 +37,9 @@ function update(data) {
                 <h3 class="h3 repo__h3">
                     <a class="link_primary" href="${repo.url}">${repo.name}</a>
                 </h3>
-                <p class="repo__item-desc mb-10">${repo.description}</p>
+                <p class="repo__item-desc mb-10">${desc}</p>
                 <div>
-                    <span class="tag repo__tag tag_lang-${lang.toLowerCase()}">${lang}</span>
+                    <span class="tag repo__tag"><span class="tag_lang-${lang.toLowerCase()}"></span>${lang}</span>
                     <span class="tag repo__tag">Updated on ${new Date(repo.pushedAt).toDateString().substring(4)}</span>
                 </div>
             </div>
