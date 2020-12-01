@@ -27,7 +27,7 @@ fetch("/.netlify/functions/getrepos")
 
 
 function update(data) {
-    const domArr = data.map(repo => {
+    const domArr = data.reverse().map(repo => {
         const lang = repo.primaryLanguage ? repo.primaryLanguage.name : ''
         const desc = repo.description ? repo.description : ''
 
