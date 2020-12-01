@@ -384,6 +384,8 @@
 
 .repo__results {
     min-height: 540px;
+    margin: 0;
+    padding: 0;
 }
 
 .repo__item {
