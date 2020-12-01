@@ -30,7 +30,12 @@ You can start editing the files and viewing the results on http://localhost:8080
 
 
 #### To Do
+- [x] Create Exact Lookalike
+- [x] Make Responsive
+- [x] Use Live Data
+- [x] Ensure Keyboard Accessible
 - Distinguish regions with Aria Roles
-- Ensure Keyboard accessibility
 - Provide alternate text equivalent to non-text elements
 - ... (?)
+
+See results: [https://gthb.netlify.app/toheeb/](https://gthb.netlify.app/toheeb/)
