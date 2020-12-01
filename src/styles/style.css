@@ -1,286 +1,27 @@
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+.page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     color: #24292e;
     line-height: 1.5;
     font-size: 14px;
-}
-
-
-.btn {
-    font: 500 14px/20px sans-serif;
-    font-family: inherit;
-    cursor: pointer;
-    padding: 5px 16px;
-    border-radius: 6px;
-    background: transparent;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.btn__icon {
-    vertical-align: sub;
-    color: #6a737d;
-}
-
-.btn_primary {
-    color: white;
-    background: #2ea44f;
-    border: 1px solid #2ea44f;
-}
-
-.btn_secondary {
-    color: #24292e;
-    background-color: #fafbfc;
-    border: 1px solid rgba(27, 31, 35, 0.15);
-}
-
-.btn_tertiary {
-    color: rgb(88, 96, 105);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 12px;
-    text-align: left;
-    padding: 6px 12px;
-    font-weight: normal;
-}
-
-.btn_opt-1 {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2px 8px;
-    border-radius: 16px;
-}
-
-
-
-
-.user {
-    padding: 4px 16px 0;
-    margin-bottom: 40px;
-}
-
-.user__main-details {
-    display: flex;
-    margin-bottom: 24px;
-    align-items: center;
-}
-
-.user__image {
-    width: 16.6667%;
-    height: auto;
-    margin-right: 24px;
-}
-
-.user__name {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: #24292e;
-}
-
-.user__username {
-    font-size: 20px;
-    line-height: 24px;
-    color: #586069;
-    font-weight: 300;
-}
-
-.user__status-button {
-    width: 100%;
-    margin: 0 0 8px;
-    padding: 8px;
-}
-
-.user__description {
-    margin-bottom: 16px;
-    padding: 0;
-}
-
-
-.user__octicon {
-    color: #6a737d;
-    margin-right: 4px;
-}
-
-.user__link {
-    color: #24292e;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.user__metric {
-    color: #586069;
-    /* margin-right: 16px; */
-    position: relative;
-}
-
-.user__metric::after {
-    content: '\000b7';
-    margin: 0 4px 0 6px;
-}
-
-
-.footer {
-    text-align: center;
-    font-size: 12px;
-    padding: 0 16px 56px;
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-}
-
-.footer-nav {
-    border-top: 1px solid rgba(27, 31, 35, 0.15);
-    padding-top: 40px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer-nav__item {
-    margin-right: 14px;
-    white-space: nowrap;
-}
-
-
-
-
-.link_primary {
-    color: #0366d6;
-    text-decoration: none;
-}
-
-.link_primary:hover {
-    text-decoration: underline;
-}
-
-
-.h3 {
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.h3__tag {
-    position: relative;
-    top: -3px;
-    left: 4px;
-}
-
-
-.tag {
-    font-size: 12px;
-    color: #586069;
-}
-
-
-
-
-.tag_lang-html {
-    background-color: #e34c26;
-}
-
-.tag_lang-css {
-    background-color: #563d7c;
-}
-
-.tag_lang-php {
-    background-color: #4F5D95;
-}
-
-.tag_lang-javascript {
-    background-color: #f1e05a;
-}
-
-.tag_lang-typescript {
-    background-color: #f1e05a;
-}
-
-.tag_lang-php,
-.tag_lang-css,
-.tag_lang-html,
-.tag_lang-typescript,
-.tag_lang-javascript  {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    margin-right: 4px;
-}
-
-
-
-
-
-
-/****************************************************
-*** M A I N  H E A D E R
-****************************************************/
-
-.main-header {
-    padding: 16px;
-    background-color: #24292e;
-    color: white;
+    margin: 0;
 }
 
 
 
 /******************************** 
-    *** Faux Menu Nav
-    ********************************/
-.faux-menu-nav-toggle {
-    border: 0;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-}
-
-.faux-menu-nav-toggle:focus {
-    outline: 0;
-}
-
-#faux-menu-nav {
-    display: none;
-    font-size: 14px;
-    margin-top: 16px;
-}
-
-#faux-menu-nav.faux-menu-nav_active {
-    display: block;
-}
-
-#faux-menu-nav .main-nav__menu {
-    display: flex;
-    flex-direction: column;
-    margin-top: 16px;
-}
-
-#faux-menu-nav .main-nav__menu-item {
-    padding: 9px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
+ Navigations
+ - Main
+ - Operator
+ - User
+ - Footer
+ - Faux Menu 
+ - Search
+********************************/
 
 
-/******************************** 
-    *** Navs
-    ********************************/
-
-.header-navs {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
+/* Main Navigation */
 
 .main-nav {
     display: none;
@@ -297,6 +38,8 @@ body {
 }
 
 
+/* Operator Navigation */
+
 .operator-nav {
     display: flex;
     align-items: center;
@@ -307,43 +50,7 @@ body {
 }
 
 
-.search-form {
-    min-width: 270px;
-    flex: 0;
-    transition: all 1s;
-}
-
-.search-form__input {
-    color: white;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    font-weight: normal;
-    /* background: transparent;
-    height: 30px;
-    border-radius: 6px;
-    padding: 4px 12px 6px; */
-}
-
-.search-form__input:focus {
-    outline: 0;
-    border-color: rgb(0, 110, 237);
-    background-color: rgba(255, 255, 255, 0.2);
-    flex: 1;
-}
-
-.search-form__input::placeholder {
-    font-size: 0.875rem;
-    line-height: 30px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    color:rgba(255, 255, 255, 0.7);
-}
-
-
-
-.user-repo {
-    padding: 0 16px;
-}
-
+/* User Navigation */
 
 .user-nav {
     display: flex;
@@ -397,6 +104,370 @@ body {
 }
 
 
+
+/* Footer Navigation */
+
+.footer-nav {
+    padding-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav__item {
+    margin-right: 14px;
+    white-space: nowrap;
+}
+
+
+
+/* Faux Menu Navigation */
+
+#faux-menu-nav {
+    display: none;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+#faux-menu-nav.faux-menu-nav_active {
+    display: block;
+}
+
+#faux-menu-nav .main-nav__menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+#faux-menu-nav .main-nav__menu-item {
+    padding: 9px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* Search Form */
+
+.search-form {
+    min-width: 270px;
+    flex: 0;
+    transition: all 1s;
+}
+
+.search-form__input {
+    color: white;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-weight: normal;
+}
+
+.search-form__input:focus {
+    outline: 0;
+    border-color: rgb(0, 110, 237);
+    background-color: rgba(255, 255, 255, 0.2);
+    flex: 1;
+}
+
+.search-form__input::placeholder {
+    font-size: 0.875rem;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color:rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+/******************************** 
+ Components
+ - Buttons (btn)
+ - Links
+ - Tags
+ - User
+ - Repo
+ - User
+********************************/
+
+
+/* Buttons */
+
+.btn {
+    font: 500 14px/20px sans-serif;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 6px;
+    background: transparent;
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    border: 0;
+}
+
+.btn__icon {
+    vertical-align: sub;
+    color: #6a737d;
+}
+
+.btn_1 {
+    padding: 5px 16px;
+    color: white;
+    background: #2ea44f;
+    border: 1px solid #2ea44f;
+}
+
+.btn_2 {
+    color: #24292e;
+    padding: 5px 16px;
+    background-color: #fafbfc;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+}
+
+.btn_3 {
+    color: rgb(88, 96, 105);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    text-align: left;
+    padding: 6px 12px;
+    font-weight: normal;
+}
+
+.btn_opt-1 {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2px 8px;
+    border-radius: 16px;
+}
+
+
+
+/* Links */
+
+.link_1 {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.link_1:hover {
+    text-decoration: underline;
+}
+
+.link_2 {
+    color: #24292e;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+
+/* Tags */
+
+.tag {
+    font-size: 12px;
+    color: #586069;
+}
+
+.tag__lang  {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+
+.tag__lang_html {
+    background-color: #e34c26;
+}
+
+.tag__lang_css {
+    background-color: #563d7c;
+}
+
+.tag__lang_php {
+    background-color: #4F5D95;
+}
+
+.tag__lang_javascript {
+    background-color: #f1e05a;
+}
+
+.tag__lang_typescript {
+    background-color: #f1e05a;
+}
+
+
+
+
+/* User */
+
+.user {
+    padding: 4px 16px 0;
+    margin-bottom: 40px;
+}
+
+.user__main-details {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.user__image {
+    width: 16.6667%;
+    height: auto;
+    margin-right: 24px;
+}
+
+.user__name {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #24292e;
+    margin: 0;
+}
+
+.user__username {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #586069;
+    font-weight: 300;
+}
+
+.user__status-button {
+    width: 100%;
+    margin: 0 0 8px;
+    padding: 8px;
+}
+
+.user__description {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+
+.user__octicon {
+    color: #6a737d;
+    margin-right: 4px;
+}
+
+
+.user__metric {
+    color: #586069;
+    /* margin-right: 16px; */
+    position: relative;
+}
+
+.user__metric::after {
+    content: '\000b7';
+    margin: 0 4px 0 6px;
+}
+
+
+/* Repo */
+
+.repo {
+    margin: 0 auto 64px;
+    max-width: 1280px;
+}
+
+.repo-search {
+    padding: 16px 0;
+}
+
+.repo-search__actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo__results {
+    min-height: 540px;
+}
+
+.repo__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: center;
+    border-top: 1px solid rgba(27, 31, 35, 0.15);
+}
+
+.repo__item-desc {
+    color: #586069;
+    padding-right: 24px;
+}
+
+.repo__item-fork {
+    font-size: 12px;
+    color: #586069;
+}
+
+.repo__item:last-child {
+    border-bottom: 1px solid rgba(27, 31, 35, 0.15);
+}
+
+.repo__btn {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.repo__tag {
+    margin-right: 16px;
+}
+
+.repo__h3 {
+    margin-bottom: 4px;
+}
+
+
+.footer {
+    border-top: 1px solid rgba(27, 31, 35, 0.15);
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    width: 100%;
+    padding: 0 16px 56px;
+    max-width: 1280px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*** M A I N  H E A D E R
+****************************************************/
+
+.main-header {
+    padding: 16px;
+    background-color: #24292e;
+    color: white;
+}
+
+
+.header-navs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
 /************************************* 
 *** More Utitlities
 **************************************/
@@ -404,6 +475,23 @@ body {
 .octicon {
     fill: currentColor;
     vertical-align: text-bottom;
+}
+
+.h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.h3__tag {
+    position: relative;
+    top: -3px;
+    left: 4px;
+}
+
+.user-repo {
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .user__octicon_small {
@@ -535,60 +623,6 @@ body {
 }
 
 
-.repo {
-    margin: 0 auto 64px;
-    max-width: 1280px;
-}
-
-.repo-search {
-    padding: 16px 0;
-}
-
-.repo-search__actions {
-    display: flex;
-    justify-content: space-between;
-}
-
-.repo__results {
-    min-height: 540px;
-}
-
-.repo__item {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 0;
-    align-items: center;
-    border-top: 1px solid rgba(27, 31, 35, 0.15);
-}
-
-.repo__item-desc {
-    color: #586069;
-    padding-right: 24px;
-}
-
-.repo__item-fork {
-    font-size: 12px;
-    color: #586069;
-}
-
-.repo__item:last-child {
-    border-bottom: 1px solid rgba(27, 31, 35, 0.15);
-}
-
-.repo__btn {
-    width: 100%;
-    margin-bottom: 16px;
-}
-
-.repo__tag {
-    margin-right: 16px;
-}
-
-.repo__h3 {
-    margin-bottom: 4px;
-}
-
-
 
 
 
@@ -682,7 +716,7 @@ body {
     *** Faux Menu Nav (for Medium Screen)
     **************************************/
     
-    .faux-menu-nav-toggle {
+    #faux-menu-nav-toggle {
         display: none;
     }
 
@@ -756,12 +790,16 @@ body {
         margin: 0 16px 0 0;
     }
 
+
+    /* User */
+
     .user {
         position: absolute;
         width: 25%;
         left: 0;
         top: 16px;
         padding: 0 8px 0 24px;
+        box-sizing: border-box;
     }
 
     .user__main-details {
@@ -777,13 +815,14 @@ body {
         z-index: 2;
     }
 
+    .user__status {
+        display: none;
+    }
+
     .user-repo {
         width: 75%;
         margin-left: 25%;
         padding: 0 24px 0 8px;
-        /* position: absolute;
-        top: 4rem;
-        left: 25%; */
     }
 
 
