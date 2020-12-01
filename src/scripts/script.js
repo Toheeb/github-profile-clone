@@ -37,7 +37,7 @@ function update(data) {
                 <h3 class="h3 repo__h3">
                     <a class="link_1" href="${repo.url}">${repo.name}</a>
                 </h3>
-                <p class="repo__item-desc mb-10">${desc}</p>
+                <div class="repo__item-desc mb-10">${desc}</div>
                 <div>
                     <span class="tag repo__tag"><span class="tag__lang tag__lang_${lang.toLowerCase()}"></span>${lang}</span>
                     <span class="tag repo__tag">Updated on ${new Date(repo.pushedAt).toDateString().substring(4)}</span>
