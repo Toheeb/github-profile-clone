@@ -210,7 +210,7 @@
     border-bottom: 2px solid rgb(249, 130, 108);
 }
 
-.user-nav__item_repo::after {
+.user-nav__repo-count {
     content: attr(data-repository);
     background: rgba(209,213,218,0.5);
     padding: 2px;

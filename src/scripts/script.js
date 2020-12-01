@@ -50,7 +50,9 @@ function update(data) {
         </li>
     `})
 
-    document.getElementById('repositoryCount').setAttribute('data-repository', domArr.length)
+    document.getElementById('repositoryCount').innerHTML = `
+        <span class="user-nav__repo-count">${domArr.length}</span>
+    `
 
     document.getElementById('repositories').innerHTML = domArr.join('')
 }
