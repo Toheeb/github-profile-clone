@@ -694,7 +694,9 @@
         border-bottom: 8px solid white;
     }
 
-
+    .dashboard-nav__status {
+        margin: 0 16px;
+    }
 
     .dashboard-nav__item {
         color: rgb(36, 41, 46);
