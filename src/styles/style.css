@@ -10,6 +10,127 @@
 
 
 
+
+/******************************** 
+ Components
+ - Buttons (btn)
+ - Links
+ - Tags
+ - User
+ - Repo
+ - User
+********************************/
+
+
+/* Buttons */
+
+.btn {
+    font: 500 14px/20px sans-serif;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 6px;
+    background: transparent;
+    white-space: nowrap;
+    color: white;
+    border: 0;
+    padding: 0;
+}
+
+.btn__icon {
+    vertical-align: sub;
+    color: #6a737d;
+}
+
+.btn_1 {
+    padding: 5px 16px;
+    color: white;
+    background: #2ea44f;
+    border: 1px solid #2ea44f;
+}
+
+.btn_2 {
+    color: #24292e;
+    padding: 5px 16px;
+    background-color: #fafbfc;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+}
+
+.btn_3 {
+    color: rgb(88, 96, 105);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    text-align: left;
+    padding: 6px 12px;
+    font-weight: normal;
+}
+
+.btn_opt-1 {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2px 8px;
+    border-radius: 16px;
+}
+
+
+
+/* Links */
+
+.link_1 {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.link_1:hover {
+    text-decoration: underline;
+}
+
+.link_2 {
+    color: #24292e;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+
+/* Tags */
+
+.tag {
+    font-size: 12px;
+    color: #586069;
+}
+
+.tag__lang  {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+
+.tag__lang_html {
+    background-color: #e34c26;
+}
+
+.tag__lang_css {
+    background-color: #563d7c;
+}
+
+.tag__lang_php {
+    background-color: #4F5D95;
+}
+
+.tag__lang_javascript {
+    background-color: #f1e05a;
+}
+
+.tag__lang_typescript {
+    background-color: #f1e05a;
+}
+
+
 /******************************** 
  Navigations
  - Main
@@ -159,6 +280,7 @@
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.15);
     font-weight: normal;
+    padding: 6px 12px;
 }
 
 .search-form__input:focus {
@@ -178,125 +300,6 @@
 
 
 
-
-/******************************** 
- Components
- - Buttons (btn)
- - Links
- - Tags
- - User
- - Repo
- - User
-********************************/
-
-
-/* Buttons */
-
-.btn {
-    font: 500 14px/20px sans-serif;
-    font-family: inherit;
-    cursor: pointer;
-    border-radius: 6px;
-    background: transparent;
-    text-align: center;
-    white-space: nowrap;
-    color: white;
-    border: 0;
-}
-
-.btn__icon {
-    vertical-align: sub;
-    color: #6a737d;
-}
-
-.btn_1 {
-    padding: 5px 16px;
-    color: white;
-    background: #2ea44f;
-    border: 1px solid #2ea44f;
-}
-
-.btn_2 {
-    color: #24292e;
-    padding: 5px 16px;
-    background-color: #fafbfc;
-    border: 1px solid rgba(27, 31, 35, 0.15);
-}
-
-.btn_3 {
-    color: rgb(88, 96, 105);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 12px;
-    text-align: left;
-    padding: 6px 12px;
-    font-weight: normal;
-}
-
-.btn_opt-1 {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2px 8px;
-    border-radius: 16px;
-}
-
-
-
-/* Links */
-
-.link_1 {
-    color: #0366d6;
-    text-decoration: none;
-}
-
-.link_1:hover {
-    text-decoration: underline;
-}
-
-.link_2 {
-    color: #24292e;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-
-
-
-/* Tags */
-
-.tag {
-    font-size: 12px;
-    color: #586069;
-}
-
-.tag__lang  {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    margin-right: 4px;
-}
-
-
-.tag__lang_html {
-    background-color: #e34c26;
-}
-
-.tag__lang_css {
-    background-color: #563d7c;
-}
-
-.tag__lang_php {
-    background-color: #4F5D95;
-}
-
-.tag__lang_javascript {
-    background-color: #f1e05a;
-}
-
-.tag__lang_typescript {
-    background-color: #f1e05a;
-}
 
 
 
