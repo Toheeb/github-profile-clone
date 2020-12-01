@@ -7,5 +7,9 @@ npm start
 
 You can start editing the files and viewing the results on http://localhost:8080/toheeb .
 
-PS:
-Currently making some adjustments
+
+#### To Do
+- Distinguish regions with Aria Roles
+- Ensure Keyboard accessibility
+- Provide alternate text equivalent to non-text elements
+- ... (?)
