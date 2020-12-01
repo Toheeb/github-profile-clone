@@ -644,8 +644,12 @@
         align-items: center;
     }
 
+    .main-nav__menu {
+        display: flex;
+    }
+
     .main-nav__menu-item {
-        margin-right: 14px;
+        margin-right: 16px;
     }
 
     .user__octicon_small {
