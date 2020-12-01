@@ -50,5 +50,7 @@ function update(data) {
         </li>
     `})
 
+    document.getElementById('repositoryCount').setAttribute('data-repository', domArr.length)
+
     document.getElementById('repositories').innerHTML = domArr.join('')
 }
