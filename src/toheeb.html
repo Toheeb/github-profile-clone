@@ -89,23 +89,25 @@
 
         <aside class="user">
             <div class="user__main-details">
-                <img class="profile user__image" src="/images/profile.jpg" width="260" height="260" alt="">
-                <div class="user__octicon_small">
+                <button class="btn user__img-cont">
+                    <img class="profile user__img" src="/images/profile.jpg" width="260" height="260" alt="">
+                </button>
+                <a class="user__octicon_small" href="">
                     <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM5 8a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zM5.32 9.636a.75.75 0 011.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 111.222.87l-.614-.431c.614.43.614.431.613.431v.001l-.001.002-.002.003-.005.007-.014.019a1.984 1.984 0 01-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.32 3.32 0 01-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 01.183-1.044h.001z"></path></svg>
-                </div>
+                </a>
                 <div>
                     <h1 class="user__name">Toheeb Ogunbiyi</h1>
-                    <p class="user__username">Toheeb</p>
+                    <div class="user__username">Toheeb</div>
                 </div>
             </div>
             <button class="user__status btn btn_3 w-100 mb-10">
                 <svg class="octicon user__octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM5 8a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zM5.32 9.636a.75.75 0 011.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 111.222.87l-.614-.431c.614.43.614.431.613.431v.001l-.001.002-.002.003-.005.007-.014.019a1.984 1.984 0 01-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.32 3.32 0 01-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 01.183-1.044h.001z"></path></svg>
                 Set Status
             </button>
-            <p class="user__description">
+            <div class="user__description">
                 Currently making things.
-            </p>
-            <button class="btn btn_2 w-100 mb-16">Edit profile</button>
+            </div>
+            <button class="repo-search__btn btn btn_2 w-100 mb-16">Edit profile</button>
             <div class="mb-10">
                 <svg class="octicon octicon-link user__octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>
                 <a class="link_2" href="https://toheeb.com/">https://toheeb.com</a>
@@ -144,16 +146,16 @@
 
         <div class="user-repo">
             <form action="" class="repo-search">
-                <input class="btn btn_3 repo__btn" type="search" name="" id="" placeholder="Find a repository...">
+                <input class="btn btn_3 repo-search__btn repo__btn" type="search" name="" id="" placeholder="Find a repository...">
                 <div class="repo-search__actions">
-                    <button class="btn btn_2 caret mr-8">
+                    <button class="repo-search__btn btn btn_2 caret mr-8">
                         <span class="light-text">Type:</span> All
                     </button>
-                    <button class="btn btn_2 caret mr-8">
+                    <button class="repo-search__btn btn btn_2 caret mr-8">
                         <span class="light-text">Language:</span> All
                     </button>
                     <span class="expandable"></span>
-                    <button class="btn btn_1">
+                    <button class="btn btn_1 repo__new-btn">
                         <svg class="octicon octicon-repo" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
                         New
                     </button>

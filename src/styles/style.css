@@ -205,6 +205,11 @@
     white-space: nowrap;
 }
 
+.user-nav__item:focus {
+    border-bottom: 2px solid rgb(209, 213, 218);
+    outline: 0;
+}
+
 .user-nav__item_active {
     font-weight: 600;
     border-bottom: 2px solid rgb(249, 130, 108);
@@ -315,13 +320,21 @@
     display: flex;
     margin-bottom: 24px;
     align-items: center;
+
+    position: relative;
 }
 
-.user__image {
+.user__img-cont {
     width: 16.6667%;
     height: auto;
     margin-right: 24px;
 }
+
+.user__img {
+    width: 100%;
+    height: auto
+}
+
 
 .user__name {
     font-size: 26px;
@@ -380,9 +393,19 @@
     padding: 16px 0;
 }
 
+.repo-search__btn:focus {
+    box-shadow: 0px 0px 0px 3px rgba(3, 102, 214, 0.3);
+    outline: 0;
+}
+
 .repo-search__actions {
     display: flex;
     justify-content: space-between;
+}
+
+.repo__new-btn:focus {
+    box-shadow: 0px 0px 0px 3px rgba(46, 164, 79, 0.4);
+    outline: 0;
 }
 
 .repo__results {
@@ -515,7 +538,7 @@
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(27, 31, 35, 0.5);
     top: 0.875rem;
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
 }
 
 .profile {
@@ -655,9 +678,9 @@
     .user__octicon_small {
         display: flex;
 
-        position: relative;
-        bottom: 6rem;
-        right: -85%;
+        position: absolute;
+        bottom: 8rem;
+        right: 0;
         z-index: 2;
     }
 
@@ -767,10 +790,6 @@
         margin-right: 4px;
     }
 
-    .details__summary:focus {
-        outline: 0;
-    }
-
     .details__summary:hover {
         color: rgba(255, 255, 255, 0.7);
     }
@@ -818,8 +837,11 @@
         align-items: start;
     }
 
-    .user__image {
+    .user__img-cont {
         width: 100%;
+    }
+    
+    .user__img {
         margin: 0 0 16px 0;
 
         position: relative;
